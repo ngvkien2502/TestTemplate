@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatProjectAssign.Resources.Templates">
+
+    <Style
+        x:Key="S_KPersonPictureBaseStyle"
+        TargetType="local:KPersonPicture">
+        <Setter
+            Property="Template">
+            <Setter.Value>
+                <ControlTemplate
+                    TargetType="local:KPersonPicture">
+                    <Ellipse
+                        Width="200"
+                        Height="200">
+                        <Ellipse.Fill>
+                            <ImageBrush
+                                Stretch="UniformToFill"
+                                ImageSource="yourimage" />
+                        </Ellipse.Fill>
+                    </Ellipse>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
